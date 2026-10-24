@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Mareta láminas</title>
+<style>
+  @page { size: 420mm 297mm; margin: 0; }
+  :root {
+    --blue: #0a5ea8;
+    --ink: #2b2622;
+    --soft: #6f655d;
+    --line: #d9cfc5;
+    --tan: #c9a993;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; font-family: "Inter", sans-serif; color: var(--ink); }
+  .page { width: 420mm; height: 297mm; position: relative; overflow: hidden; page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  img { display: block; }
+
+  /* ---------- LÁMINA 1 ---------- */
+  .p1 .hero { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .p1 .head { position: absolute; left: 18mm; top: 15mm; width: 165mm; }
+  .p1 h1 { font-family: "Inter Display", "Inter", sans-serif; font-weight: 700; font-size: 92pt; line-height: .9; letter-spacing: -2.5pt; color: var(--blue); }
+  .p1 .def { margin-top: 7mm; font-size: 15.5pt; line-height: 1.32; font-weight: 500; color: var(--ink); }
+  .p1 .sub { margin-top: 4mm; font-size: 12.5pt; line-height: 1.35; color: var(--soft); }
+  .p1 .desc {
+    position: absolute; right: 50mm; bottom: 12mm; width: 174mm;
+    background: rgba(252, 248, 244, .86); border-radius: 3mm; padding: 7mm 8mm;
+    font-size: 10pt; line-height: 1.45; color: var(--ink);
+  }
+  .p1 .desc p + p { margin-top: 2.2mm; }
+  .eyebrow { font-size: 8pt; font-weight: 600; letter-spacing: 1.6pt; text-transform: uppercase; color: var(--blue); margin-bottom: 2.5mm; }
+
+  /* ---------- LÁMINA 2 ---------- */
+  .p2 { padding: 13mm 14mm 12mm; display: grid; grid-template-rows: auto 1fr auto; gap: 6mm; }
+  .p2 header { display: flex; align-items: baseline; gap: 8mm; border-bottom: .3mm solid var(--line); padding-bottom: 4mm; }
+  .p2 header h2 { font-family: "Inter Display", "Inter", sans-serif; font-weight: 700; font-size: 30pt; letter-spacing: -.8pt; color: var(--blue); }
+  .p2 header .tag { font-size: 13pt; color: var(--ink); font-weight: 500; }
+  .p2 header .tag span { color: var(--soft); font-weight: 400; }
+  .p2 main { display: grid; grid-template-columns: 116mm 1fr 60mm; gap: 9mm; min-height: 0; }
+  .col { display: flex; flex-direction: column; min-height: 0; }
+  .sec-title { font-size: 8pt; font-weight: 600; letter-spacing: 1.6pt; text-transform: uppercase; color: var(--blue); margin-bottom: 1mm; }
+  .sec-title b { color: var(--tan); font-weight: 700; margin-right: 1.5mm; }
+  .sec-lead { font-size: 10pt; color: var(--soft); line-height: 1.35; margin-bottom: 3mm; }
+
+  .colA { border-right: .3mm solid var(--line); padding-right: 9mm; }
+  .colA img { width: 100%; height: auto; margin-top: auto; }
+
+  .colB { gap: 5mm; }
+  .anat { position: relative; }
+  .anat img { width: 100%; }
+  .anat .lbls { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6mm; margin-top: 1.5mm; }
+  .lbl { font-size: 9pt; line-height: 1.35; color: var(--soft); border-top: .3mm solid var(--line); padding-top: 1.5mm; }
+  .lbl strong { display: block; color: var(--ink); font-size: 10pt; font-weight: 600; }
+
+  .strip { display: grid; gap: 4mm; align-items: end; }
+  .strip.u { grid-template-columns: repeat(5, 1fr); }
+  .strip.s { grid-template-columns: 1fr 1fr 1.45fr 1.1fr; }
+  .fig img { width: 100%; height: auto; }
+  .strip.u .fig img { height: 40mm; width: auto; max-width: 100%; margin: 0 auto; object-fit: contain; }
+  .strip.s .fig img { height: 31mm; width: auto; max-width: 100%; margin: 0 auto; object-fit: contain; }
+  .fig figcaption { font-size: 9pt; text-align: center; margin-top: 1.5mm; color: var(--ink); font-weight: 500; }
+
+  .colC { border-left: .3mm solid var(--line); padding-left: 8mm; }
+  .steps { display: flex; flex-direction: column; justify-content: space-between; flex: 1; }
+  .step { display: grid; grid-template-columns: 7mm 1fr; column-gap: 2mm; align-items: center; }
+  .step .n { font-family: "Inter Display", sans-serif; font-size: 18pt; font-weight: 700; color: var(--tan); align-self: start; }
+  .step img { height: 27mm; width: auto; max-width: 100%; }
+  .step p { grid-column: 2; font-size: 9pt; line-height: 1.3; color: var(--ink); font-weight: 500; margin-top: .5mm; }
+
+  .p2 footer { display: grid; grid-template-columns: 1fr 1fr; gap: 9mm; border-top: .3mm solid var(--line); padding-top: 4mm; }
+  .p2 footer ul { list-style: none; display: flex; flex-wrap: wrap; gap: 1.5mm 6mm; font-size: 9.5pt; }
+  .p2 footer li::before { content: "●"; color: var(--tan); margin-right: 1.8mm; font-size: 7pt; vertical-align: 1pt; }
+</style>
+</head>
+<body>
+
+<!-- ===================== LÁMINA 1 ===================== -->
+<section class="page p1">
+  <img class="hero" src="hero.jpg" alt="">
+  <div class="head">
+    <h1>Mareta</h1>
+    <p class="def">Accesorio de higiene corporal para la ducha que lava, con una sola mano, las zonas a las que no llegas.</p>
+    <p class="sub">Tú te lavas lo que alcanzas. Mareta se encarga del resto.</p>
+  </div>
+  <div class="desc">
+    <div class="eyebrow">El proyecto</div>
+    <p>Ducharse se complica cuando el cuerpo deja de llegar a sí mismo. La espalda, los pies, la zona íntima y los pliegues obligan a agacharse, girar o sostenerse sobre una pierna en el lugar con más riesgo de caída, o a pedir ayuda y perder intimidad.</p>
+    <p>Mareta es una pieza de silicona flexible de 65 cm que se sujeta con una sola mano por cualquiera de sus extremos. Se apoya en el hombro y baja por la espalda, se enrolla en la pierna y desciende en espiral hasta envolver el pie, y recorre los pliegues retirando la humedad. Su cara combina microcerdas, poros que dosifican agua y jabón y una zona lisa; un extremo exclusivo aclara la zona íntima con 180 ml, sin frotar.</p>
+    <p>Sin app ni cámara: un toque o la voz. Guardarla en su cuenco es cargarla. Lava con la ducha cerrada: menos agua.</p>
+  </div>
+</section>
+
+<!-- ===================== LÁMINA 2 ===================== -->
+<section class="page p2">
+  <header>
+    <h2>Mareta</h2>
+    <p class="tag">Tú te lavas lo que alcanzas. <span>Mareta se encarga del resto.</span></p>
+  </header>
+
+  <main>
+    <div class="col colA">
+      <div class="sec-title"><b>01</b>El momento</div>
+      <p class="sec-lead">De pie, con el cuerpo mojado y con jabón, sobre un suelo resbaladizo. Lo que no se alcanza queda mal lavado o exige pedir ayuda.</p>
+      <img src="ducha.jpg" alt="">
+    </div>
+
+    <div class="col colB">
+      <div class="anat">
+        <div class="sec-title"><b>02</b>Una pieza, tres texturas</div>
+        <img src="anatomia.jpg" alt="">
+        <div class="lbls">
+          <div class="lbl"><strong>Microcerdas</strong>Friegan la piel de la espalda, las piernas y los pies.</div>
+          <div class="lbl"><strong>Poros</strong>Sueltan agua y jabón mientras lava.</div>
+          <div class="lbl"><strong>Extremo liso</strong>Aclarado íntimo con 180 ml de agua, sin frotar.</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="sec-title"><b>03</b>Usos por zona</div>
+        <div class="strip u">
+          <figure class="fig"><img src="u1.jpg" alt=""><figcaption>Espalda</figcaption></figure>
+          <figure class="fig"><img src="u2.jpg" alt=""><figcaption>Piernas</figcaption></figure>
+          <figure class="fig"><img src="u3.jpg" alt=""><figcaption>Pies</figcaption></figure>
+          <figure class="fig"><img src="u4.jpg" alt=""><figcaption>Zona íntima</figcaption></figure>
+          <figure class="fig"><img src="u5.jpg" alt=""><figcaption>Pliegues</figcaption></figure>
+        </div>
+      </div>
+
+      <div>
+        <div class="sec-title"><b>04</b>También sentado</div>
+        <div class="strip s">
+          <figure class="fig"><img src="s1.jpg" alt=""><figcaption>Muslos y vientre</figcaption></figure>
+          <figure class="fig"><img src="s2.jpg" alt=""><figcaption>Espalda</figcaption></figure>
+          <figure class="fig"><img src="s3.jpg" alt=""><figcaption>Piernas</figcaption></figure>
+          <figure class="fig"><img src="s4.jpg" alt=""><figcaption>Pies</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="col colC">
+      <div class="sec-title"><b>05</b>Cómo se usa</div>
+      <div class="steps">
+        <div class="step"><span class="n">1</span><img src="c1.jpg" alt=""><p>Enjuágala y llena el depósito en el grifo.</p></div>
+        <div class="step"><span class="n">2</span><img src="c2.jpg" alt=""><p>Apóyala sobre la zona con una sola mano.</p></div>
+        <div class="step"><span class="n">3</span><img src="c3.jpg" alt=""><p>Recorre la zona, lava y aclara.</p></div>
+        <div class="step"><span class="n">4</span><img src="c4.jpg" alt=""><p>En su base se seca y se carga.</p></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <div class="sec-title">Reglas de confianza</div>
+      <ul>
+        <li>Nunca entra en ningún orificio</li>
+        <li>Si la sueltas, se para</li>
+        <li>Nunca frota una mucosa</li>
+        <li>Sin cámara: no graba nada</li>
+      </ul>
+    </div>
+    <div>
+      <div class="sec-title">Sostenibilidad y agua</div>
+      <ul>
+        <li>Lava con la ducha cerrada</li>
+        <li>Aclarado íntimo con solo 180 ml</li>
+        <li>Pads reponibles y reciclables</li>
+        <li>Núcleo duradero y transferible</li>
+      </ul>
+    </div>
+  </footer>
+</section>
+
+</body>
+</html>
