@@ -40,7 +40,18 @@
 
 ## LÁMINA 1 — El problema y la idea
 
-### 01 · Imagen principal / JPEG — ✅ hecha (es la referencia maestra)
+### 01 · Imagen principal / JPEG (regenerada a partir de la referencia) · 3:2 horizontal
+
+*(Sin texto: "Mareta" y el lema se ponen al maquetar en el hueco de arriba a la izquierda. Formato 3:2 para que encaje en el A3.)*
+
+```
+Use the attached image as the master reference. Reproduce the product, the scene, the camera and the light exactly as they appear in it: do not redesign, restyle, simplify or reinterpret anything. Recreate the same photograph in a cleaner, sharper, higher-quality version, without any text.
+SCENE: Mareta lies on a honed warm-grey stone shelf inside a shower, wet with a thin sheen of water and scattered round droplets. The object crosses the frame diagonally in its soft S-curve: the smooth end pad with the small debossed "Mareta" wordmark is in the lower-left foreground, closest to the camera; the body rises and curves towards the right; the other bulbous end pad, with its thin seam line, rests in the right of the frame, slightly further back. The leaf-shaped nub field on top of the body faces up and is clearly visible in the centre-right. Behind, a warm grey plaster / micro-cement shower wall with faint vertical water streaks on the right side, softly out of focus. The upper-left third of the frame is calm, empty, softly lit wall, reserved for a title added later.
+CAMERA: low angle, almost at the level of the stone surface, slightly above the object, three-quarter view, 85 mm, the whole product sharp from end to end, background softly blurred.
+The product (Mareta) must be identical to the reference: a single elongated soft S-shaped bar about 65 cm long, thick and rounded in cross-section (about 6 cm wide), with no sharp edges. Both ends swell into rounded, bulbous end pads: one end pad is completely smooth with a small debossed "Mareta" wordmark; the other end pad is rounded with a thin seam line. Along the top of the central body runs an elongated, leaf-shaped field of small, dense, rounded silicone nubs, densest in the middle and fading out towards its edges. A thin continuous parting line runs along the side. Material: matte, velvety platinum silicone in a warm greige / taupe-beige, with water beading in round droplets. Keep exactly the same proportions, thickness, end shapes, texture pattern, color and finish. No buttons, no screens, no lights, no cables, no extra parts, no other logos or text.
+Match the photography of the reference exactly: soft diffused natural daylight from the right and slightly behind, gentle wrap-around shadows, no hard highlights, no colored light; warm neutral color grading in greige, taupe, warm grey and soft beige; low contrast, slightly desaturated, calm and premium. Photorealistic, high-end personal-care campaign quality, non-medical. No title, no headline, no added text, no graphics, no watermark.
+Landscape 3:2.
+```
 
 ### 02 · En el baño (contexto) · 3:2 horizontal
 
